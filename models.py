@@ -59,7 +59,7 @@ class AtlasCluster:
         self.name = cluster_name
         self.region = None
         self.provider = None
-        self.processes = []
+        self.processes: [AtlasProcess] = []
         self.state = None
         self.size = None
         self.diskSizeGB = None
@@ -76,3 +76,4 @@ class AtlasCluster:
     def build_timestamps_with_metrics(self):
         for proc in self.processes:
             proc.group_metrics_by_timestamp()
+            
