@@ -1,0 +1,7 @@
+target:
+  project_id: <CLLUSTER_ID>
+  cluster_name: <YOUR-CLUSTER-NAME>
+  cluster_url: mongodb+srv://<user>:<password>@<yourcluster>/test?retryWrites=true&w=majority
+api_access:
+  public_key: <public_key>
+  private_key: <private_key>
